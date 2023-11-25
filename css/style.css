@@ -1,0 +1,575 @@
+/* GENERAL STYLE */
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --secondery-font: 'Poppins', sans-serif;
+    --main-color:#343434;
+    --transision-time:0.5s;
+}
+body{
+    font-family: var(--main-font);
+}
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+.underline-head {
+    font-size: 2.875rem;
+    font-weight: 800;
+
+ 
+}
+.underline-head::before{
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 15rem;
+    height: 1rem;
+    background-repeat: repeat;
+    transform: translateX(-50%);
+    background-image: url("../img/dots.png");
+
+}
+.fit-content{
+    width: fit-content;
+}
+#clients , #team , #servcies{
+   z-index: -2; 
+}
+/* START OF HOME SECTION */
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)) , url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.social-icons .icons-item{
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+#home h1::after{
+    content: " |";
+    animation: anim-header 12s infinite;
+    font-weight: 400;
+}
+
+@keyframes anim-header {
+    0%{
+        content: " |";
+
+    }
+    1.5%{
+        content: " D|";
+
+    }
+    3%{
+        content: " De|";
+
+    }
+    4.5%{
+        content: " Des|";
+
+    }
+    6%{
+        content: " Desi|";
+
+    }
+    7.5%{
+        content: "  Desig|";
+
+    }
+    9%{
+        content: " Design|";
+
+    }
+    10.5%{
+        content: " Designe|";
+
+    }
+    12%{
+        content: " Designer|";
+
+    }
+    13.5%{
+        content: " Designe|";
+
+    }
+    15%{
+        content: " Design|";
+
+    }
+    16.5%{
+        content: " Desig|";
+
+    }
+    18%{
+        content: " Desi|";
+
+    }
+    19.5%{
+        content: " Des|";
+
+    }
+    21%{
+        content: " De|";
+    }
+    22.5%{
+        content: " D|";
+    }
+    24%{
+        content: " |";
+    }
+    25.5%{
+        content: " D|";
+    }
+    27%{
+        content: " De|";
+    }
+    28.5%{
+        content: " Dev|";
+    }
+    30%{
+        content: " Deve|";
+    }
+    31.5%{
+        content: " Devel|";
+    }
+    33%{
+        content: " Develo|";
+    }
+    34.5%{
+        content: " Develop|";
+    }
+    36%{
+        content: " Develope|";
+    }
+    37.5%{
+        content: " Developer|";
+    }
+    39%{
+        content: " Develope|";
+    }
+    41.5%{
+        content: " Develop|";
+    }
+    43%{
+        content: " Develo|";
+    }
+    44.5%{
+        content: " Devel|";
+    }
+    46%{
+        content: " Deve|";
+    }
+    47.5%{
+        content: " Dev|";
+    }
+    49%{
+        content: " De|";
+    }
+    50.5%{
+        content: " D|";
+    }
+    52%{
+        content: " |";
+    }
+    53.5%{
+        content: " L|";
+    }
+    55%{
+        content: " La|";
+    }
+    56.5%{
+        content: " Lar|";
+    }
+    58%{
+        content: " Larr|";
+    }
+    59.5%{
+        content: " Larry|";
+    }
+    61%{
+        content: " Larry D|";
+    }
+    62.5%{
+        content: " Larry Da|";
+    }
+    64%{
+        content: " Larry Dan|";
+    }
+    65.5%{
+        content: " Larry Dani|";
+    }
+    67%{
+        content: " Larry Dania|";
+    }
+    68.5%{
+        content: " Larry Danial|";
+    }
+    70%{
+        content: " Larry Danials|";
+    }
+    71.5%{
+        content: " Larry Danial|";
+    }
+    73%{
+        content: " Larry Dania|";
+    }
+    74.5%{
+        content: " Larry Dani|";
+    }
+    76%{
+        content: " Larry Dan|";
+    }
+    77.5%{
+        content: " Larry Da|";
+    }
+    79%{
+        content: " Larry D|";
+    }
+    80.5%{
+        content: " Larry|";
+    }
+    82%{
+        content: " Larr|";
+    }
+    84%{
+        content: " Lar|";
+    }
+    86%{
+        content: " La|";
+    }
+    88%{
+        content: " L|";
+    }
+    90%{
+        content: " |";
+    }
+}
+
+/* END OF HOME SECTION */
+
+/* Start Of Nav */
+nav .brand-fw{
+    font-family: var(--main-font);
+    font-weight: 900;
+}
+nav{
+    background-color: rgba(0,0,0,0.5);
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: .0225rem;
+    width: 0%;
+    height: .1275rem;
+    background-color: white;
+    transition: var(--transision-time) all;
+    
+}
+.navbar-nav .nav-link.active::after{
+content: "";
+position: absolute;
+width: 80%;
+height: 0.1275rem;
+background-color: white;
+left: 10%;
+}
+.nav-link:hover{
+    color: white;
+}
+.navbar-nav .nav-link{
+    color: white;
+   
+}
+ nav .nav-item:hover .nav-link::after{
+    width: 80%;    
+}
+
+
+.nav-link::after:hover {
+width: 80%;
+    transition: var(--transision-time) all;
+   
+}
+.nav-link:focus{
+    color: white;
+}
+
+/* End Of Nav */
+
+
+/* Start Of About */
+#about .row h3{
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+#about .row .rate-95{
+    width: 95%;
+    background-color: rgb(14, 14, 14);
+}
+#about .row .rate-80{
+    width: 80%;
+    background-color: rgb(14, 14, 14);
+}
+#about .row .rate-90{
+    width: 90%;
+    background-color: rgb(14, 14, 14);
+}
+#about .row .progress{
+    height: 2rem;
+}
+#about .row .button-sty , 
+#contact .button-sty
+{
+    transition: var(--transision-time) all;
+}
+
+#about .row .button-sty , 
+#contact .button-sty
+{
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+#about .row .button-sty:hover ,
+#contact .button-sty:hover
+{
+    background-color: white ;
+    border: 1px solid black;
+    color: black ;
+
+}
+#about .row picture::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -1.375rem;
+    bottom: -1.875rem;
+    background-image: url("../img/dots.png");
+    background-repeat: repeat;
+    z-index: -1;
+} 
+/* End Of About */
+
+
+/* Start Of Servicies */
+
+
+
+#servcies .row .icon-new , 
+#contact .row .icon-new
+{
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    padding: 1.25rem;
+    color: #121212;
+    font-size: 1.7rem; 
+    transition: var(--transision-time) all;
+}
+
+
+#servcies .about-info:hover i , 
+#contact .about-info:hover i
+{
+    color: #f7f7f7;
+    transition: var(--transision-time) all;
+}
+#servcies .about-info:hover .icon-new ,
+#contact .about-info:hover .icon-new
+{
+    background-color: black;
+}
+#servcies .about-info p {
+    font-size: .8375rem;
+    font-weight: 500;
+}
+/* End Of Servieces */
+
+
+/* Start Of Works */
+#works .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: black;
+    font-weight: 800;
+
+}
+#works .nav-pills .nav-link.active::after{
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: .1475rem;
+    background-color: black;
+}
+#works .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: .1475rem;
+    background-color: black;
+}
+#works .nav-item:hover .nav-link::after{
+    width: 60%;
+    
+}
+
+#works .nav-link:hover{
+    color: black;
+}
+#works .nav-link{
+    color: black;
+    font-weight: 800;
+}
+.hov-works{
+    background-color: rgba(255, 255, 255, 0.7);
+  position:absolute;
+  top: 1rem;
+  right: 1rem ;
+  left: 1rem ;
+  bottom: 0.5rem;
+  opacity: 0;
+  transition: var(--transision-time) all;
+    
+}
+#team .social-icons .icons-item ,
+#works .social-icons .icons-item
+{
+    background-color: black;
+    transition: var(--transision-time) all;
+    border: solid black 1px;
+    margin-top: 1.5rem;
+}
+#team .social-icons .icons-item a i ,
+#works .social-icons .icons-item a i
+{
+    color:white;
+    
+}
+#team .social-icons .icons-item:hover a i ,
+#works .social-icons .icons-item:hover a i
+{
+    color: black;
+}
+#team .social-icons .icons-item:hover ,
+#works .social-icons .icons-item:hover
+{
+    border: black solid 1px;
+    background-color: white;
+}
+
+#works .opac-work:hover .hov-works{
+    opacity: 1;
+    top : 0.5rem;
+}
+#works .opac-work:hover .icons-item{
+    margin-top:0;
+}
+
+/* End Of Works */
+
+/* Start Of Clients */
+
+
+#clients .img-size img{
+    width: 7rem;
+    height: 7rem;
+}
+#clients .img-size .font-par{
+    font-size: 0.8rem;
+}
+.carousel-indicators [data-bs-target]{
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color:#869791;
+    border-radius: 50%;
+}
+#clients .carousel-indicators button:hover{
+    background-color:#495057;
+}
+/* End Of Clients */
+
+/* Start Of Our Team */
+#team .card{
+
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+#team .card .card-body {
+    border-radius: 0 0 0.75rem 0.75rem;
+    background-color: var(--main-color);
+
+
+}
+
+#team .social-icons{
+    background-color: rgba(255, 255, 255, 0.9);
+    position:absolute;
+    top: 0.4rem;
+    right: 0.4rem ;
+    left: 0.4rem ;
+    bottom: 0.4rem;
+    opacity: 0;
+    transition: var(--transision-time) all;
+    transform: rotateY(180deg);
+
+}
+#team .row picture img{
+    transition: var(--transision-time) all;
+}
+#team .row picture:hover img{
+    transform: scale(1.2);
+    
+}
+
+ #team .card:hover .social-icons{
+    transform: rotateY(360deg) ;
+    opacity: 1;
+} 
+/* End Of Our Team */
+
+/* Start Of Contact */
+.form-control {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #343434;
+    font-weight: 500;
+    background-color: #f4f4f4;
+    background-clip: padding-box;
+    border: none;
+    transition: none;
+}
+.form-control:focus {
+    color: #343434;
+    background-color: #f4f4f4;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+/* End Of Contact */
+
+/* Start Of Footer */
+#footer{
+    background-color: #1c1c1c;
+}
+#footer p{
+    color: #748182;
+}
+
+/* End Of Footer */
